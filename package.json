@@ -1,0 +1,17 @@
+{
+  "name": "finervision-project",
+  "version": "1.0.0",
+  "description": "Project for Finervision application",
+  "main": "server.js",
+  "author": "Martin Wheeler",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "concurrently": "^6.2.1"
+  },
+  "scripts": {
+    "client": "npm start --prefix client",
+    "server": "npm start --prefix server",
+    "dev": "concurrently \"npm run client\" \"npm run server\""
+  }
+}
